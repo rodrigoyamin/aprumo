@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aprumo · Suporte</title>
+<meta name="description" content="Suporte do Aprumo, aplicativo de controle financeiro pessoal para iPhone, iPad e Mac.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --ground:#f6f8f7; --surface:#ffffff; --surface-2:#eef2f0;
+    --line:#dbe3e0; --ink:#15201d; --ink-2:#4d5a56; --ink-3:#8a9793;
+    --marca:#00816c; --marca-eco:#e8f2ef;
+    --serif:"Literata",Georgia,"Times New Roman",serif;
+    --sans:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:#0f1513; --surface:#161e1c; --surface-2:#1c2624;
+      --line:#2a3835; --ink:#e7eeeb; --ink-2:#adbab6; --ink-3:#74827e;
+      --marca:#46c2a8; --marca-eco:#12241f; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground:#0f1513; --surface:#161e1c; --surface-2:#1c2624;
+    --line:#2a3835; --ink:#e7eeeb; --ink-2:#adbab6; --ink-3:#74827e;
+    --marca:#46c2a8; --marca-eco:#12241f; color-scheme: dark;
+  }
+  * { box-sizing:border-box; }
+  img { max-width:100%; }
+  body { margin:0; background:var(--ground); color:var(--ink);
+    font-family:var(--serif); font-size:17px; line-height:1.68;
+    -webkit-font-smoothing:antialiased; padding-inline:22px; padding-block:0 80px; }
+  .folha { max-width:660px; margin-inline:auto; }
+  .marca { display:flex; flex-direction:column; align-items:center; width:44px; color:var(--marca); line-height:1; }
+  .cifrao { font-family:var(--sans); font-weight:600; font-size:40px; }
+  .fio { width:2px; height:9px; background:currentColor; }
+  .peso { width:17px; height:19px; background:currentColor; clip-path:polygon(50% 100%,0 30%,50% 0,100% 30%); }
+  header { padding-block:72px 0; display:flex; flex-direction:column; gap:20px; align-items:flex-start; }
+  h1 { font-weight:500; font-size:clamp(34px,7vw,46px); line-height:1.1;
+    letter-spacing:-.02em; margin:0; text-wrap:balance; }
+  .sub { margin:0; font-size:19px; color:var(--ink-2); max-width:34em; }
+  main { margin-top:54px; display:flex; flex-direction:column; gap:40px; }
+  h2 { font-weight:600; font-size:20px; letter-spacing:-.01em; margin:0 0 10px; }
+  p { margin:0 0 14px; color:var(--ink-2); }
+  p:last-child { margin-bottom:0; }
+  strong { color:var(--ink); font-weight:600; }
+  ul { margin:0; padding-left:0; list-style:none; display:flex; flex-direction:column; gap:10px; }
+  li { color:var(--ink-2); padding-left:20px; position:relative; }
+  li::before { content:""; position:absolute; left:2px; top:.68em; width:6px; height:6px;
+    border-radius:1px; background:var(--marca); }
+  .contato { padding:24px 26px; background:var(--marca-eco);
+    border-left:3px solid var(--marca); border-radius:3px; }
+  .contato h2 { color:var(--marca); font-family:var(--sans); font-size:12px;
+    font-weight:600; letter-spacing:.09em; text-transform:uppercase; margin-bottom:8px; }
+  .contato p { font-size:18px; color:var(--ink); margin:0; }
+  a { color:var(--marca); }
+  footer { margin-top:56px; padding-top:24px; border-top:1px solid var(--line);
+    font-family:var(--sans); font-size:13.5px; color:var(--ink-3);
+    display:flex; flex-wrap:wrap; gap:6px 18px; }
+  :focus-visible { outline:2px solid var(--marca); outline-offset:3px; border-radius:2px; }
+  @media (max-width:540px) { header { padding-block:48px 0; } }
+</style>
+</head>
+<body>
+<div class="folha">
+
+  <header>
+    <div class="marca">
+      <span class="cifrao">$</span>
+      <span class="fio"></span>
+      <span class="peso"></span>
+    </div>
+    <h1>Aprumo</h1>
+    <p class="sub">Controle financeiro pessoal para iPhone, iPad e Mac. Suas contas no prumo, sem cadastro e sem servidor no meio.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Precisa de ajuda?</h2>
+      <p>Escreva. Não há central de atendimento nem formulário: quem responde sou eu, na mesma caixa de entrada, em até dois dias úteis.</p>
+    </section>
+
+    <div class="contato">
+      <h2>Contato</h2>
+      <p><a href="mailto:rodrigoyamin@gmail.com"><strong>rodrigoyamin@gmail.com</strong></a></p>
+    </div>
+
+    <section>
+      <h2>Perguntas que aparecem sempre</h2>
+      <ul>
+        <li><strong>Meus dados vão para algum servidor?</strong> Não. Eles ficam no aparelho e na sua própria conta do iCloud. Nada passa por mim.</li>
+        <li><strong>Uso em mais de um aparelho?</strong> Sim. Com o iCloud ligado, iPhone, iPad e Mac ficam sincronizados sozinhos, com a sua conta Apple.</li>
+        <li><strong>Como levo meus dados embora?</strong> Em <strong>Ajustes &rarr; Exportar tudo</strong> o app gera uma planilha com todos os lançamentos.</li>
+        <li><strong>Como apago tudo?</strong> Em <strong>Ajustes &rarr; Apagar tudo e recomeçar</strong>. Isso limpa todos os aparelhos sincronizados e não tem volta.</li>
+        <li><strong>Perdi o aparelho.</strong> Com o iCloud ligado, é só instalar o Aprumo no aparelho novo com a mesma conta Apple: os dados voltam.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Encontrou um problema?</h2>
+      <p>Conte o que aconteceu, em que aparelho e em que tela. Se der, mande uma captura. É o que mais ajuda a corrigir rápido.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <a href="privacidade.html">Política de Privacidade</a>
+    <span>Aprumo &middot; iPhone, iPad e Mac</span>
+  </footer>
+
+</div>
+</body>
+</html>

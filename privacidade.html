@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade · Aprumo</title>
+<meta name="description" content="Política de privacidade do Aprumo, aplicativo de controle financeiro pessoal para iPhone, iPad e Mac.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --ground:#f6f8f7; --surface:#ffffff; --surface-2:#eef2f0;
+    --line:#dbe3e0; --ink:#15201d; --ink-2:#4d5a56; --ink-3:#8a9793;
+    --marca:#00816c; --marca-eco:#e8f2ef;
+    --serif:"Literata",Georgia,"Times New Roman",serif;
+    --sans:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:#0f1513; --surface:#161e1c; --surface-2:#1c2624;
+      --line:#2a3835; --ink:#e7eeeb; --ink-2:#adbab6; --ink-3:#74827e;
+      --marca:#46c2a8; --marca-eco:#12241f;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground:#0f1513; --surface:#161e1c; --surface-2:#1c2624;
+    --line:#2a3835; --ink:#e7eeeb; --ink-2:#adbab6; --ink-3:#74827e;
+    --marca:#46c2a8; --marca-eco:#12241f;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  img { max-width: 100%; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font-family: var(--serif); font-size: 17px; line-height: 1.68;
+    -webkit-font-smoothing: antialiased;
+    padding-inline: 22px; padding-block: 0 80px;
+  }
+  .folha { max-width: 680px; margin-inline: auto; }
+  .marca { display:flex; flex-direction:column; align-items:center; width:34px; color:var(--marca); line-height:1; }
+  .cifrao { font-family:var(--sans); font-weight:600; font-size:30px; }
+  .fio { width:2px; height:7px; background:currentColor; }
+  .peso { width:13px; height:15px; background:currentColor; clip-path:polygon(50% 100%,0 30%,50% 0,100% 30%); }
+  header { padding-block:60px 0; display:flex; flex-direction:column; gap:22px; }
+  .assinatura { display:flex; align-items:center; gap:14px; }
+  .assinatura p { margin:0; font-family:var(--sans); font-size:12px; letter-spacing:.09em;
+    text-transform:uppercase; color:var(--ink-3); line-height:1.5; }
+  .assinatura strong { color:var(--marca); font-weight:600; display:block; }
+  h1 { font-weight:500; font-size:clamp(32px,6.5vw,44px); line-height:1.12;
+    letter-spacing:-.018em; margin:0; text-wrap:balance; }
+  .vigencia { font-family:var(--sans); font-size:13.5px; color:var(--ink-3); margin:0; }
+  .resumo { margin-top:34px; padding:26px 28px; background:var(--marca-eco);
+    border-left:3px solid var(--marca); border-radius:3px; }
+  .resumo h2 { font-family:var(--sans); font-size:12px; font-weight:600; letter-spacing:.09em;
+    text-transform:uppercase; color:var(--marca); margin:0 0 10px; }
+  .resumo p { margin:0 0 12px; font-size:18px; line-height:1.6; }
+  .resumo p:last-child { margin-bottom:0; }
+  main { margin-top:52px; display:flex; flex-direction:column; gap:44px; }
+  section { display:grid; grid-template-columns:40px 1fr; gap:0 18px; }
+  .numero { font-family:var(--sans); font-size:13px; font-weight:500;
+    font-variant-numeric:tabular-nums; color:var(--ink-3); padding-top:7px; }
+  section h2 { grid-column:2; font-weight:600; font-size:21px; line-height:1.3;
+    letter-spacing:-.01em; margin:0 0 10px; text-wrap:balance; }
+  section > :not(h2):not(.numero) { grid-column:2; }
+  section p { margin:0 0 14px; color:var(--ink-2); }
+  section p:last-child { margin-bottom:0; }
+  section strong { color:var(--ink); font-weight:600; }
+  ul { margin:0 0 14px; padding-left:0; list-style:none; display:flex; flex-direction:column; gap:9px; }
+  ul:last-child { margin-bottom:0; }
+  li { color:var(--ink-2); padding-left:20px; position:relative; }
+  li::before { content:""; position:absolute; left:2px; top:.68em; width:6px; height:6px;
+    border-radius:1px; background:var(--marca); }
+  .termo { font-family:var(--sans); font-size:14.5px; background:var(--surface-2);
+    padding:1px 6px; border-radius:3px; color:var(--ink); white-space:nowrap; }
+  a { color:var(--marca); }
+  footer { margin-top:56px; padding-top:26px; border-top:1px solid var(--line);
+    font-family:var(--sans); font-size:13.5px; color:var(--ink-3);
+    display:flex; flex-direction:column; gap:6px; }
+  :focus-visible { outline:2px solid var(--marca); outline-offset:3px; border-radius:2px; }
+  @media (max-width:540px) {
+    header { padding-block:40px 0; }
+    section { grid-template-columns:1fr; gap:0; }
+    .numero { padding-top:0; padding-bottom:2px; }
+    section h2, section > :not(h2):not(.numero) { grid-column:1; }
+  }
+</style>
+</head>
+<body>
+<div class="folha">
+
+  <header>
+    <div class="assinatura">
+      <div class="marca">
+        <span class="cifrao">$</span>
+        <span class="fio"></span>
+        <span class="peso"></span>
+      </div>
+      <p><strong>Aprumo</strong>Controle financeiro pessoal</p>
+    </div>
+    <h1>Política de Privacidade</h1>
+    <p class="vigencia">Versão 1.0 &middot; em vigor desde 10 de setembro de 2026</p>
+  </header>
+
+  <div class="resumo">
+    <h2>Em uma frase</h2>
+    <p><strong>O Aprumo não coleta nada.</strong> Os seus lançamentos, contas, cartões, orçamentos e metas ficam no seu aparelho e na sua própria conta do iCloud. Eu não recebo, não vejo e não guardo nenhum deles.</p>
+    <p>Não existe servidor meu no meio, nem cadastro, nem login, nem publicidade, nem medição de uso. O texto abaixo detalha isso item por item.</p>
+  </div>
+
+  <main>
+
+    <section>
+      <div class="numero">1</div>
+      <h2>Quem responde por esta política</h2>
+      <p>O Aprumo é desenvolvido e mantido por <strong>Rodrigo Yamin Fraga</strong>, responsável por este aplicativo e por esta política.</p>
+      <p>Contato para qualquer assunto relacionado a privacidade: <a href="mailto:rodrigoyamin@gmail.com"><strong>rodrigoyamin@gmail.com</strong></a>.</p>
+    </section>
+
+    <section>
+      <div class="numero">2</div>
+      <h2>Que dados existem, e onde eles ficam</h2>
+      <p>Tudo que você registra no Aprumo — lançamentos, contas, cartões, categorias, orçamentos e metas — é gravado em duas camadas, ambas suas:</p>
+      <ul>
+        <li><strong>No próprio aparelho</strong>, num banco de dados local do aplicativo.</li>
+        <li><strong>Na sua conta do iCloud</strong>, no banco privado que a Apple reserva a cada usuário. É o mesmo mecanismo que sincroniza suas notas e lembretes entre iPhone, iPad e Mac.</li>
+      </ul>
+      <p>Esse banco privado do iCloud é acessível apenas por você, com a sua conta Apple. Eu, como desenvolvedor, não tenho e não posso obter acesso a ele. Se você não usa o iCloud ou o desativa para o Aprumo, os dados simplesmente ficam no aparelho.</p>
+      <p>O uso do iCloud é regido pelos termos e pela política de privacidade da Apple, não por esta.</p>
+    </section>
+
+    <section>
+      <div class="numero">3</div>
+      <h2>O que o Aprumo não faz</h2>
+      <p>Vale enumerar, porque a ausência é o ponto:</p>
+      <ul>
+        <li>Não há servidor, banco de dados ou infraestrutura minha recebendo qualquer informação sua.</li>
+        <li>Não há cadastro, conta de usuário, senha ou login.</li>
+        <li>Não há ferramenta de medição de uso, estatística ou análise de comportamento.</li>
+        <li>Não há publicidade, nem identificador de publicidade, nem rastreamento entre aplicativos ou sites.</li>
+        <li>Não há biblioteca de terceiros embutida no aplicativo. Ele usa apenas as ferramentas da própria Apple.</li>
+        <li>Nada é vendido, compartilhado, cedido ou enviado a quem quer que seja.</li>
+      </ul>
+      <p>Na ficha de privacidade da App Store, o Aprumo está declarado como <strong>&ldquo;Dados não coletados&rdquo;</strong>, e é literalmente o caso.</p>
+    </section>
+
+    <section>
+      <div class="numero">4</div>
+      <h2>Os recursos que poderiam levantar dúvida</h2>
+      <p>Quatro partes do aplicativo tocam em algo sensível. Nenhuma envia dados para fora:</p>
+      <ul>
+        <li><strong>Face ID e Touch ID.</strong> Se você ligar a trava, quem confere a sua digital ou o seu rosto é o sistema operacional. O aplicativo recebe apenas a resposta &ldquo;sim&rdquo; ou &ldquo;não&rdquo; — nenhum dado biométrico chega até ele, nem existe forma de chegar.</li>
+        <li><strong>Avisos de vencimento.</strong> As notificações são criadas e disparadas pelo próprio aparelho, a partir dos dados que já estão nele. Não há serviço de notificação externo e nada trafega pela rede. Cada aparelho agenda os seus.</li>
+        <li><strong>Exportação em planilha.</strong> O arquivo <span class="termo">.csv</span> é montado no aparelho e entregue à folha de compartilhamento do sistema. Para onde ele vai depois — e-mail, arquivos, outro aplicativo — é escolha sua, e a partir dali vale a política de quem recebeu.</li>
+        <li><strong>Preferências do aplicativo.</strong> Ajustes locais, como o horário dos avisos e se a trava está ligada, ficam no armazenamento de preferências do próprio aparelho. São configurações, não dados financeiros, e também não saem dali.</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="numero">5</div>
+      <h2>Como apagar tudo</h2>
+      <p>Você tem três caminhos, e todos estão na sua mão:</p>
+      <ul>
+        <li>Em <strong>Ajustes &rarr; Apagar tudo e recomeçar</strong>, dentro do aplicativo. Como os aparelhos estão sincronizados, isso apaga em todos eles.</li>
+        <li>Desinstalando o aplicativo, o que remove os dados guardados naquele aparelho.</li>
+        <li>Nos ajustes do sistema, em <strong>iCloud &rarr; Gerenciar Armazenamento</strong>, é possível apagar os dados que o Aprumo guarda na sua conta.</li>
+      </ul>
+      <p>Nenhuma dessas ações precisa passar por mim, e nenhuma delas pode ser desfeita.</p>
+    </section>
+
+    <section>
+      <div class="numero">6</div>
+      <h2>Seus direitos e a LGPD</h2>
+      <p>A Lei Geral de Proteção de Dados assegura a você acesso, correção, portabilidade e eliminação dos seus dados pessoais.</p>
+      <p>No caso do Aprumo esses direitos se resolvem sem intermediário, porque não há tratamento de dados pessoais da minha parte: eu não recebo nem tenho acesso a nada do que você registra. O acesso é a própria tela do aplicativo; a correção é editar o lançamento; a portabilidade é a exportação em planilha; a eliminação é apagar, do jeito descrito acima.</p>
+      <p>Se ainda assim você tiver dúvida ou quiser tratar de algo relacionado aos seus dados, escreva para o contato do item 1.</p>
+    </section>
+
+    <section>
+      <div class="numero">7</div>
+      <h2>Crianças e adolescentes</h2>
+      <p>O Aprumo não é direcionado a menores de idade e não coleta dados de ninguém — o que vale igualmente para crianças e adolescentes. Não há como um menor fornecer informação pessoal ao aplicativo, porque o aplicativo não recebe informação alguma.</p>
+    </section>
+
+    <section>
+      <div class="numero">8</div>
+      <h2>O que a Apple recolhe por conta própria</h2>
+      <p>Ao baixar ou atualizar qualquer aplicativo, a Apple registra dados dessa operação segundo as regras dela, e me repassa relatórios agregados de downloads — números, sem qualquer identificação de pessoas.</p>
+      <p>Isso acontece na App Store, não dentro do Aprumo, e é regido pela política de privacidade da Apple.</p>
+    </section>
+
+    <section>
+      <div class="numero">9</div>
+      <h2>Mudanças nesta política</h2>
+      <p>Se alguma versão futura do aplicativo passar a tratar dados de forma diferente, esta política será atualizada antes do lançamento dessa versão, com nova data de vigência no alto da página.</p>
+      <p>Enquanto a data acima for a que está valendo, o que está escrito aqui descreve o aplicativo como ele é hoje.</p>
+    </section>
+
+    <section>
+      <div class="numero">10</div>
+      <h2>Como falar comigo</h2>
+      <p>Dúvida, correção nesta política ou qualquer assunto de privacidade: <a href="mailto:rodrigoyamin@gmail.com"><strong>rodrigoyamin@gmail.com</strong></a>. Respondo pessoalmente.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>Aprumo &middot; Política de Privacidade &middot; versão 1.0, 10 de setembro de 2026</span>
+    <span>Este documento descreve o aplicativo Aprumo para iPhone, iPad e Mac.</span>
+  </footer>
+
+</div>
+</body>
+</html>

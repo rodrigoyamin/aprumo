@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Termos de Uso · Aprumo</title>
+<meta name="description" content="Termos de Uso do Aprumo, aplicativo de controle financeiro pessoal para iPhone, iPad e Mac.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --ground:#f6f8f7; --surface:#ffffff; --surface-2:#eef2f0;
+    --line:#dbe3e0; --ink:#15201d; --ink-2:#4d5a56; --ink-3:#8a9793;
+    --marca:#00816c; --marca-eco:#e8f2ef;
+    --serif:"Literata",Georgia,"Times New Roman",serif;
+    --sans:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:#0f1513; --surface:#161e1c; --surface-2:#1c2624;
+      --line:#2a3835; --ink:#e7eeeb; --ink-2:#adbab6; --ink-3:#74827e;
+      --marca:#46c2a8; --marca-eco:#12241f;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground:#0f1513; --surface:#161e1c; --surface-2:#1c2624;
+    --line:#2a3835; --ink:#e7eeeb; --ink-2:#adbab6; --ink-3:#74827e;
+    --marca:#46c2a8; --marca-eco:#12241f;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  img { max-width: 100%; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font-family: var(--serif); font-size: 17px; line-height: 1.68;
+    -webkit-font-smoothing: antialiased;
+    padding-inline: 22px; padding-block: 0 80px;
+  }
+  .folha { max-width: 680px; margin-inline: auto; }
+  .marca { display:flex; flex-direction:column; align-items:center; width:34px; color:var(--marca); line-height:1; }
+  .cifrao { font-family:var(--sans); font-weight:600; font-size:30px; }
+  .fio { width:2px; height:7px; background:currentColor; }
+  .peso { width:13px; height:15px; background:currentColor; clip-path:polygon(50% 100%,0 30%,50% 0,100% 30%); }
+  header { padding-block:60px 0; display:flex; flex-direction:column; gap:22px; }
+  .assinatura { display:flex; align-items:center; gap:14px; }
+  .assinatura p { margin:0; font-family:var(--sans); font-size:12px; letter-spacing:.09em;
+    text-transform:uppercase; color:var(--ink-3); line-height:1.5; }
+  .assinatura strong { color:var(--marca); font-weight:600; display:block; }
+  h1 { font-weight:500; font-size:clamp(32px,6.5vw,44px); line-height:1.12;
+    letter-spacing:-.018em; margin:0; text-wrap:balance; }
+  .vigencia { font-family:var(--sans); font-size:13.5px; color:var(--ink-3); margin:0; }
+  .resumo { margin-top:34px; padding:26px 28px; background:var(--marca-eco);
+    border-left:3px solid var(--marca); border-radius:3px; }
+  .resumo h2 { font-family:var(--sans); font-size:12px; font-weight:600; letter-spacing:.09em;
+    text-transform:uppercase; color:var(--marca); margin:0 0 10px; }
+  .resumo p { margin:0 0 12px; font-size:18px; line-height:1.6; }
+  .resumo p:last-child { margin-bottom:0; }
+  main { margin-top:52px; display:flex; flex-direction:column; gap:44px; }
+  section { display:grid; grid-template-columns:40px 1fr; gap:0 18px; }
+  .numero { font-family:var(--sans); font-size:13px; font-weight:500;
+    font-variant-numeric:tabular-nums; color:var(--ink-3); padding-top:7px; }
+  section h2 { grid-column:2; font-weight:600; font-size:21px; line-height:1.3;
+    letter-spacing:-.01em; margin:0 0 10px; text-wrap:balance; }
+  section > :not(h2):not(.numero) { grid-column:2; }
+  section p { margin:0 0 14px; color:var(--ink-2); }
+  section p:last-child { margin-bottom:0; }
+  section strong { color:var(--ink); font-weight:600; }
+  ul { margin:0 0 14px; padding-left:0; list-style:none; display:flex; flex-direction:column; gap:9px; }
+  ul:last-child { margin-bottom:0; }
+  li { color:var(--ink-2); padding-left:20px; position:relative; }
+  li::before { content:""; position:absolute; left:2px; top:.68em; width:6px; height:6px;
+    border-radius:1px; background:var(--marca); }
+  .termo { font-family:var(--sans); font-size:14.5px; background:var(--surface-2);
+    padding:1px 6px; border-radius:3px; color:var(--ink); white-space:nowrap; }
+  a { color:var(--marca); }
+  footer { margin-top:56px; padding-top:26px; border-top:1px solid var(--line);
+    font-family:var(--sans); font-size:13.5px; color:var(--ink-3);
+    display:flex; flex-direction:column; gap:6px; }
+  :focus-visible { outline:2px solid var(--marca); outline-offset:3px; border-radius:2px; }
+  @media (max-width:540px) {
+    header { padding-block:40px 0; }
+    section { grid-template-columns:1fr; gap:0; }
+    .numero { padding-top:0; padding-bottom:2px; }
+    section h2, section > :not(h2):not(.numero) { grid-column:1; }
+  }
+</style>
+</head>
+<body>
+<div class="folha">
+
+  <header>
+    <div class="assinatura">
+      <div class="marca">
+        <span class="cifrao">$</span>
+        <span class="fio"></span>
+        <span class="peso"></span>
+      </div>
+      <p><strong>Aprumo</strong>Controle financeiro pessoal</p>
+    </div>
+    <h1>Termos de Uso</h1>
+    <p class="vigencia">Versão 1.0 &middot; em vigor desde 10 de setembro de 2026</p>
+  </header>
+
+  <div class="resumo">
+    <h2>Em uma frase</h2>
+    <p><strong>O Aprumo é um caderno, não um banco.</strong> Ele não se conecta às suas contas, não move dinheiro e não dá conselho de investimento: registra o que você digita e faz as contas em cima disso.</p>
+    <p>A assinatura custa <strong>R$ 9,90 por mês</strong> ou <strong>R$ 59,90 por ano</strong>, com <strong>o primeiro mês grátis</strong>, e renova sozinha até você cancelar. Cancelando, o app continua abrindo para consultar e exportar o que já está lá.</p>
+  </div>
+
+  <main>
+
+    <section>
+      <div class="numero">1</div>
+      <h2>Quem oferece o app</h2>
+      <p>O Aprumo é desenvolvido e mantido por <strong>Rodrigo Yamin Fraga</strong>, pessoa física, no Brasil. Contato: <a href="mailto:rodrigoyamin@gmail.com"><strong>rodrigoyamin@gmail.com</strong></a>.</p>
+      <p>Ao instalar e usar o aplicativo você concorda com estes termos. Se não concordar com algum ponto, é melhor não usar — e, se já tiver assinado, o item 6 explica como cancelar.</p>
+    </section>
+
+    <section>
+      <div class="numero">2</div>
+      <h2>O que o Aprumo faz, e o que ele não faz</h2>
+      <p>O Aprumo registra lançamentos, contas, cartões, orçamentos e metas que <strong>você digita</strong>, e calcula saldos, previsões e relatórios a partir disso.</p>
+      <p>Vale ser explícito sobre os limites, porque é aqui que mora o mal-entendido:</p>
+      <ul>
+        <li><strong>Não se conecta a bancos.</strong> Não há Open Finance, importação automática de extrato nem leitura de conta. Tudo entra pela sua mão.</li>
+        <li><strong>Não movimenta dinheiro.</strong> Marcar uma conta como paga dentro do app não paga nada no mundo real.</li>
+        <li><strong>Não é consultoria financeira.</strong> Os números, gráficos e projeções são cálculo sobre o que você informou. Decisão de gastar, poupar ou investir é sua, e para orientação profissional procure alguém habilitado.</li>
+        <li><strong>Depende do que você digita.</strong> Dado errado na entrada é resultado errado na saída, e o app não tem como saber a diferença.</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="numero">3</div>
+      <h2>A assinatura</h2>
+      <p>Baixar o Aprumo é gratuito. Registrar e alterar dados exige assinatura, em um de dois planos:</p>
+      <ul>
+        <li><strong>Mensal — R$ 9,90</strong>, renovada a cada mês.</li>
+        <li><strong>Anual — R$ 59,90</strong>, renovada a cada ano.</li>
+      </ul>
+      <p>Quem nunca assinou tem <strong>um mês grátis</strong>, em qualquer um dos dois planos. O teste vale uma vez por conta Apple.</p>
+      <p>Os preços são os vigentes nesta data e aparecem confirmados pela App Store no momento da compra — é o valor mostrado ali que vale. Havendo mudança de preço, a Apple avisa com antecedência e pede sua confirmação antes de cobrar o valor novo.</p>
+    </section>
+
+    <section>
+      <div class="numero">4</div>
+      <h2>Cobrança e renovação</h2>
+      <p>A cobrança é feita pela Apple, na sua conta Apple, no momento da confirmação da compra. Eu não recebo nem tenho acesso aos seus dados de pagamento.</p>
+      <ul>
+        <li>A assinatura <strong>renova automaticamente</strong>, salvo cancelamento.</li>
+        <li>A renovação é cobrada <strong>nas 24 horas anteriores</strong> ao fim do período em curso.</li>
+        <li>Para não ser cobrado, cancele <strong>até 24 horas antes</strong> do fim do período. Cancelar depois disso vale para o período seguinte.</li>
+        <li>Terminando o mês grátis sem cancelamento, a assinatura escolhida passa a ser cobrada normalmente.</li>
+        <li>Assinando um plano durante o período grátis, a parte não usada do teste se encerra.</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="numero">5</div>
+      <h2>O que acontece se você cancelar</h2>
+      <p>Nada é apagado, e o app não fecha as portas para você.</p>
+      <p>Encerrada a assinatura, o Aprumo continua abrindo normalmente: você consulta todos os seus lançamentos, navega pelos meses, vê os relatórios e <strong>exporta a planilha inteira</strong>. O que deixa de funcionar é o registro de coisas novas — lançar, editar, excluir, dar baixa.</p>
+      <p>Isso é deliberado. Seu histórico financeiro é seu, e tirar o acesso a ele como forma de pressão seria indefensável.</p>
+      <p>Voltando a assinar, tudo volta a funcionar exatamente de onde parou.</p>
+    </section>
+
+    <section>
+      <div class="numero">6</div>
+      <h2>Como cancelar</h2>
+      <p>O cancelamento é feito na sua conta Apple, não comigo — eu não tenho como cancelar por você:</p>
+      <ul>
+        <li><strong>No iPhone ou iPad:</strong> Ajustes → seu nome → Assinaturas → Aprumo → Cancelar assinatura.</li>
+        <li><strong>No Mac:</strong> App Store → seu nome → Ajustes da conta → Assinaturas → Gerenciar.</li>
+        <li>Ou pelo atalho <a href="https://apps.apple.com/account/subscriptions">apps.apple.com/account/subscriptions</a>, que também está dentro do app.</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="numero">7</div>
+      <h2>Arrependimento e reembolso</h2>
+      <p>Pelo Código de Defesa do Consumidor, compras feitas fora de estabelecimento físico podem ser desfeitas em <strong>até 7 dias</strong> contados da contratação.</p>
+      <p>Como a venda é processada pela Apple, os pedidos de reembolso passam por ela, em <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> — é o caminho mais rápido, e quem decide é a Apple, segundo as políticas dela. Se você tiver dificuldade, escreva para mim: eu ajudo no que estiver ao meu alcance.</p>
+    </section>
+
+    <section>
+      <div class="numero">8</div>
+      <h2>Seus dados</h2>
+      <p>Seus lançamentos ficam no seu aparelho e na sua conta do iCloud. Eu não recebo, não vejo e não guardo nenhum deles. A <a href="privacidade.html">Política de Privacidade</a> detalha isso.</p>
+      <p>Fazer cópia de segurança é responsabilidade sua, e o app te dá a ferramenta: a exportação em planilha, sempre disponível, inclusive sem assinatura.</p>
+    </section>
+
+    <section>
+      <div class="numero">9</div>
+      <h2>Uso permitido</h2>
+      <p>Você recebe uma licença pessoal, intransferível e não exclusiva para usar o Aprumo nos seus aparelhos, nos termos padrão de licença de aplicativo da Apple.</p>
+      <p>Não é permitido copiar, redistribuir, revender, alugar, descompilar ou tentar burlar o controle de assinatura do aplicativo.</p>
+    </section>
+
+    <section>
+      <div class="numero">10</div>
+      <h2>Disponibilidade e garantias</h2>
+      <p>O Aprumo é fornecido no estado em que se encontra. Faço o possível para que funcione bem e corrija erros, mas não prometo funcionamento ininterrupto nem ausência de falhas — nenhum software honesto promete isso.</p>
+      <p>Não respondo por decisões financeiras tomadas com base nos números do app, nem por perda de dados decorrente de falha do aparelho, do iCloud, de desinstalação ou de uso da função de apagar tudo.</p>
+      <p>Recursos podem mudar entre versões. Se alguma mudança afetar de forma relevante o que a assinatura entrega, você será avisado antes.</p>
+    </section>
+
+    <section>
+      <div class="numero">11</div>
+      <h2>Mudanças nestes termos</h2>
+      <p>Estes termos podem ser atualizados. A versão vigente é sempre a publicada nesta página, com a data no alto. Mudanças relevantes valem para períodos de assinatura iniciados depois da publicação.</p>
+    </section>
+
+    <section>
+      <div class="numero">12</div>
+      <h2>Lei aplicável</h2>
+      <p>Estes termos são regidos pelas leis brasileiras. Questões de consumo seguem o Código de Defesa do Consumidor, inclusive quanto ao foro competente.</p>
+    </section>
+
+    <section>
+      <div class="numero">13</div>
+      <h2>Falar comigo</h2>
+      <p>Dúvida sobre estes termos, sobre a assinatura ou sobre o app: <a href="mailto:rodrigoyamin@gmail.com"><strong>rodrigoyamin@gmail.com</strong></a>. Respondo pessoalmente, em até dois dias úteis.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>Aprumo &middot; Termos de Uso &middot; versão 1.0, 10 de setembro de 2026</span>
+    <span><a href="index.html">Suporte</a> &middot; <a href="privacidade.html">Política de Privacidade</a></span>
+  </footer>
+
+</div>
+</body>
+</html>

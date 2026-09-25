@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aprumo · Terms of Use</title>
+<meta name="description" content="Terms of Use for Aprumo, a personal finance app for iPhone, iPad and Mac.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --ground:#f6f8f7; --surface:#ffffff; --surface-2:#eef2f0;
+    --line:#dbe3e0; --ink:#15201d; --ink-2:#4d5a56; --ink-3:#8a9793;
+    --marca:#00816c; --marca-eco:#e8f2ef;
+    --serif:"Literata",Georgia,"Times New Roman",serif;
+    --sans:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:#0f1513; --surface:#161e1c; --surface-2:#1c2624;
+      --line:#2a3835; --ink:#e7eeeb; --ink-2:#adbab6; --ink-3:#74827e;
+      --marca:#46c2a8; --marca-eco:#12241f;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground:#0f1513; --surface:#161e1c; --surface-2:#1c2624;
+    --line:#2a3835; --ink:#e7eeeb; --ink-2:#adbab6; --ink-3:#74827e;
+    --marca:#46c2a8; --marca-eco:#12241f;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  img { max-width: 100%; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font-family: var(--serif); font-size: 17px; line-height: 1.68;
+    -webkit-font-smoothing: antialiased;
+    padding-inline: 22px; padding-block: 0 80px;
+  }
+  .folha { max-width: 680px; margin-inline: auto; }
+  .marca { display:flex; flex-direction:column; align-items:center; width:34px; color:var(--marca); line-height:1; }
+  .cifrao { font-family:var(--sans); font-weight:600; font-size:30px; }
+  .fio { width:2px; height:7px; background:currentColor; }
+  .peso { width:13px; height:15px; background:currentColor; clip-path:polygon(50% 100%,0 30%,50% 0,100% 30%); }
+  header { padding-block:60px 0; display:flex; flex-direction:column; gap:22px; }
+  .assinatura { display:flex; align-items:center; gap:14px; }
+  .assinatura p { margin:0; font-family:var(--sans); font-size:12px; letter-spacing:.09em;
+    text-transform:uppercase; color:var(--ink-3); line-height:1.5; }
+  .assinatura strong { color:var(--marca); font-weight:600; display:block; }
+  h1 { font-weight:500; font-size:clamp(32px,6.5vw,44px); line-height:1.12;
+    letter-spacing:-.018em; margin:0; text-wrap:balance; }
+  .vigencia { font-family:var(--sans); font-size:13.5px; color:var(--ink-3); margin:0; }
+  .resumo { margin-top:34px; padding:26px 28px; background:var(--marca-eco);
+    border-left:3px solid var(--marca); border-radius:3px; }
+  .resumo h2 { font-family:var(--sans); font-size:12px; font-weight:600; letter-spacing:.09em;
+    text-transform:uppercase; color:var(--marca); margin:0 0 10px; }
+  .resumo p { margin:0 0 12px; font-size:18px; line-height:1.6; }
+  .resumo p:last-child { margin-bottom:0; }
+  main { margin-top:52px; display:flex; flex-direction:column; gap:44px; }
+  section { display:grid; grid-template-columns:40px 1fr; gap:0 18px; }
+  .numero { font-family:var(--sans); font-size:13px; font-weight:500;
+    font-variant-numeric:tabular-nums; color:var(--ink-3); padding-top:7px; }
+  section h2 { grid-column:2; font-weight:600; font-size:21px; line-height:1.3;
+    letter-spacing:-.01em; margin:0 0 10px; text-wrap:balance; }
+  section > :not(h2):not(.numero) { grid-column:2; }
+  section p { margin:0 0 14px; color:var(--ink-2); }
+  section p:last-child { margin-bottom:0; }
+  section strong { color:var(--ink); font-weight:600; }
+  ul { margin:0 0 14px; padding-left:0; list-style:none; display:flex; flex-direction:column; gap:9px; }
+  ul:last-child { margin-bottom:0; }
+  li { color:var(--ink-2); padding-left:20px; position:relative; }
+  li::before { content:""; position:absolute; left:2px; top:.68em; width:6px; height:6px;
+    border-radius:1px; background:var(--marca); }
+  .termo { font-family:var(--sans); font-size:14.5px; background:var(--surface-2);
+    padding:1px 6px; border-radius:3px; color:var(--ink); white-space:nowrap; }
+  a { color:var(--marca); }
+  footer { margin-top:56px; padding-top:26px; border-top:1px solid var(--line);
+    font-family:var(--sans); font-size:13.5px; color:var(--ink-3);
+    display:flex; flex-direction:column; gap:6px; }
+  :focus-visible { outline:2px solid var(--marca); outline-offset:3px; border-radius:2px; }
+  @media (max-width:540px) {
+    header { padding-block:40px 0; }
+    section { grid-template-columns:1fr; gap:0; }
+    .numero { padding-top:0; padding-bottom:2px; }
+    section h2, section > :not(h2):not(.numero) { grid-column:1; }
+  }
+</style>
+</head>
+<body>
+<div class="folha">
+
+  <header>
+    <div class="assinatura">
+      <div class="marca">
+        <span class="cifrao">$</span>
+        <span class="fio"></span>
+        <span class="peso"></span>
+      </div>
+      <p><strong>Aprumo</strong>Personal finance</p>
+    </div>
+    <h1>Terms of Use</h1>
+    <p class="vigencia">Version 1.0 &middot; in force since 10 September 2026</p>
+  </header>
+
+  <div class="resumo">
+    <h2>In one sentence</h2>
+    <p><strong>Aprumo is a notebook, not a bank.</strong> It does not connect to your accounts, does not move money and does not give investment advice: it records what you type and does the arithmetic on top of it.</p>
+    <p>There is a <strong>monthly plan and a yearly one</strong>. The price for your region is shown by the App Store before you buy, and the subscription renews on its own until you cancel. If you cancel, the app still opens so you can read and export what is already there.</p>
+  </div>
+
+  <main>
+
+    <section>
+      <div class="numero">1</div>
+      <h2>Who offers the app</h2>
+      <p>Aprumo is developed and maintained by <strong>Rodrigo Yamin Fraga</strong>, an individual, in Brazil. Contact: <a href="mailto:rodrigoyamin@gmail.com"><strong>rodrigoyamin@gmail.com</strong></a>.</p>
+      <p>By installing and using the app you agree to these terms. If you disagree with any point, better not to use it — and, if you have already subscribed, item 6 explains how to cancel.</p>
+    </section>
+
+    <section>
+      <div class="numero">2</div>
+      <h2>What Aprumo does, and what it does not</h2>
+      <p>Aprumo records entries, accounts, cards, budgets and goals that <strong>you type</strong>, and works out balances, forecasts and reports from them.</p>
+      <p>The limits are worth stating plainly, because this is where the misunderstanding lives:</p>
+      <ul>
+        <li><strong>It does not connect to banks.</strong> There is no open banking, no automatic statement import and no account reading. Everything comes in by your hand.</li>
+        <li><strong>It does not move money.</strong> Marking a bill as paid inside the app pays nothing in the real world.</li>
+        <li><strong>It is not financial advice.</strong> The numbers, charts and forecasts are arithmetic on what you entered. Deciding to spend, save or invest is yours, and for professional guidance seek someone qualified.</li>
+        <li><strong>It depends on what you type.</strong> Wrong data in is wrong result out, and the app has no way of telling the difference.</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="numero">3</div>
+      <h2>The subscription</h2>
+      <p>Downloading Aprumo is free. Recording and editing data requires a subscription, on one of two plans:</p>
+      <ul>
+        <li><strong>Monthly</strong>, renewed every month.</li>
+        <li><strong>Yearly</strong>, renewed every year.</li>
+      </ul>
+      <p>The price depends on your region and is confirmed by the App Store at the moment of purchase — the amount shown there is the one that applies. If the price changes, Apple gives notice in advance and asks for your confirmation before charging the new amount.</p>
+      <p>Introductory offers, such as a free trial period, are set per region and may not exist in yours. Whatever is offered to you is shown on the subscription screen before you buy.</p>
+    </section>
+
+    <section>
+      <div class="numero">4</div>
+      <h2>Billing and renewal</h2>
+      <p>Billing is handled by Apple, in your Apple Account, at the moment you confirm the purchase. I neither receive nor have access to your payment details.</p>
+      <ul>
+        <li>The subscription <strong>renews automatically</strong> unless cancelled.</li>
+        <li>Renewal is charged <strong>within the 24 hours before</strong> the end of the current period.</li>
+        <li>To avoid being charged, cancel <strong>at least 24 hours before</strong> the period ends. Cancelling after that applies to the following period.</li>
+        <li>If a free trial period ends without cancellation, the chosen plan starts being charged normally.</li>
+        <li>Subscribing to a plan during a free trial ends the unused part of that trial.</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="numero">5</div>
+      <h2>What happens if you cancel</h2>
+      <p>Nothing is erased, and the app does not close its doors on you.</p>
+      <p>Once the subscription ends, Aprumo still opens normally: you can read all of your entries, move between months, see the reports and <strong>export the whole spreadsheet</strong>. What stops working is recording new things — adding, editing, deleting, settling.</p>
+      <p>That is deliberate. Your financial history is yours, and taking away access to it as a form of pressure would be indefensible.</p>
+      <p>If you subscribe again, everything works from exactly where it stopped.</p>
+    </section>
+
+    <section>
+      <div class="numero">6</div>
+      <h2>How to cancel</h2>
+      <p>Cancelling is done in your Apple Account, not with me — I have no way of cancelling for you:</p>
+      <ul>
+        <li><strong>On iPhone or iPad:</strong> Settings &rarr; your name &rarr; Subscriptions &rarr; Aprumo &rarr; Cancel Subscription.</li>
+        <li><strong>On Mac:</strong> App Store &rarr; your name &rarr; Account Settings &rarr; Subscriptions &rarr; Manage.</li>
+        <li>Or through <a href="https://apps.apple.com/account/subscriptions">apps.apple.com/account/subscriptions</a>, which is also linked inside the app.</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="numero">7</div>
+      <h2>Refunds</h2>
+      <p>Because the sale is processed by Apple, refund requests go through Apple, at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> — it is the fastest route, and the decision is Apple's, under its own policies.</p>
+      <p>Any statutory right of withdrawal you may have depends on the country where you bought, and is not reduced by these terms. If you run into difficulty, write to me: I will help with whatever is within my reach.</p>
+    </section>
+
+    <section>
+      <div class="numero">8</div>
+      <h2>Your data</h2>
+      <p>Your entries stay on your device and in your iCloud account. I do not receive them, do not see them and do not store them. The <a href="privacy.html">Privacy Policy</a> goes into detail.</p>
+      <p>Keeping a backup is your responsibility, and the app gives you the tool: the spreadsheet export, always available, subscription or not.</p>
+    </section>
+
+    <section>
+      <div class="numero">9</div>
+      <h2>Permitted use</h2>
+      <p>You receive a personal, non-transferable, non-exclusive licence to use Aprumo on your devices, under Apple's standard licence terms for applications.</p>
+      <p>You may not copy, redistribute, resell, rent, decompile or attempt to circumvent the app's subscription control.</p>
+    </section>
+
+    <section>
+      <div class="numero">10</div>
+      <h2>Availability and warranties</h2>
+      <p>Aprumo is provided as it is. I do my best to keep it working well and to fix faults, but I do not promise uninterrupted operation or the absence of bugs — no honest software promises that.</p>
+      <p>I am not responsible for financial decisions taken on the basis of the app's numbers, nor for data loss arising from device failure, from iCloud, from uninstalling, or from using the erase-everything function.</p>
+      <p>Features may change between versions. If a change materially affects what the subscription delivers, you will be told beforehand.</p>
+    </section>
+
+    <section>
+      <div class="numero">11</div>
+      <h2>Changes to these terms</h2>
+      <p>These terms may be updated. The version in force is always the one published on this page, with the date at the top. Material changes apply to subscription periods starting after publication.</p>
+    </section>
+
+    <section>
+      <div class="numero">12</div>
+      <h2>Governing law</h2>
+      <p>These terms are governed by the laws of Brazil, where the developer is established. If you are a consumer resident elsewhere, the mandatory consumer protections of your country of residence continue to apply, and nothing here removes them.</p>
+    </section>
+
+    <section>
+      <div class="numero">13</div>
+      <h2>Talking to me</h2>
+      <p>A question about these terms, about the subscription or about the app: <a href="mailto:rodrigoyamin@gmail.com"><strong>rodrigoyamin@gmail.com</strong></a>. I answer personally, within two working days.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>Aprumo &middot; Terms of Use &middot; version 1.0, 10 September 2026</span>
+    <span><a href="index.html">Support</a> &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="../termos.html">Português</a></span>
+  </footer>
+
+</div>
+</body>
+</html>
